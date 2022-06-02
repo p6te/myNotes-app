@@ -64,15 +64,24 @@ selectValue = () => {
 
 const checkColor = (note) => {
   switch (selectedValue) {
-    case "Zakupy":
-      note.style.backgroundColor = "rgb(73,255,0)";
+    case "Shopping":
+      note.style.backgroundColor = "#e0f0ea";
       break;
-    case "Praca":
-      note.style.backgroundColor = "rgb(73,25,50)";
+    case "Work":
+      note.style.backgroundColor = "#edd2cb";
+      break;
+    case "Sport":
+      note.style.backgroundColor = "#f1e8e6";
+      break;
+    case "Hobby":
+      note.style.backgroundColor = "#e1e8ff";
+      break;
+    case "Travel":
+      note.style.backgroundColor = "#81e9e6";
       break;
 
-    case "Inne":
-      note.style.backgroundColor = "rgb(3,17,150)";
+    case "Others":
+      note.style.backgroundColor = "#FEFCBF";
       break;
   }
 };
@@ -82,13 +91,11 @@ const removeOne = (id) => {
   noteArea.removeChild(noteToDelete);
 };
 const removeAll = () => {
-  noteArea.innerHTML = '';
+  noteArea.innerHTML = "";
   cardID = 0;
 };
-
 
 addBtn.addEventListener("click", openPanel);
 cancelBtn.addEventListener("click", closePanel);
 saveBtn.addEventListener("click", addNote);
 deleteAllBtn.addEventListener("click", removeAll);
-

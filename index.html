@@ -10,15 +10,15 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>myNotes</title>
   </head>
   <body>
     <div class="menu">
       <h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
       <div class="menu-buttons">
-        <button class="add icon"><i class="fas fa-plus"></i> Dodaj</button>
+        <button class="add icon"><i class="fas fa-plus"></i> Add</button>
         <button class="delete-all icon">
-          <i class="fas fa-trash-alt"></i> Usuń wszystkie
+          <i class="fas fa-trash-alt"></i> Delete all
         </button>
       </div>
     </div>
@@ -52,24 +52,27 @@
     </div>
 
     <div class="note-panel">
-      <h2>Dodaj notatkę</h2>
-      <label for="category">Wybierz kategorię</label>
+      <h2>Add note</h2>
+      <label for="category">Choose category</label>
       <select id="category" onchange="selectValue()">
-        <option value="0" disabled selected>- wybierz kategorię -</option>
-        <option value="1">Zakupy</option>
-        <option value="1">Praca</option>
-        <option value="1">Inne</option>
+        <option value="0" disabled selected>- choose category -</option>
+        <option value="1">Shopping</option>
+        <option value="1">Work</option>
+        <option value="1">Sport</option>
+        <option value="1">Hobby</option>
+        <option value="1">Travel</option>
+        <option value="1">Others</option>
       </select>
 
-      <label for="text">Wpisz treść notatki</label>
+      <label for="text">Enter your note text</label>
       <textarea id="text"></textarea>
 
-      <p class="error">Uzupełnij wszystkie pola!</p>
+      <p class="error">Please complete all fields!</p>
 
       <div class="panel-buttons">
-        <button class="save icon"><i class="fas fa-save"></i> Zapisz</button>
+        <button class="save icon"><i class="fas fa-save"></i> Save</button>
         <button class="cancel icon">
-          <i class="far fa-window-close"></i> Anuluj
+          <i class="far fa-window-close"></i> Delete
         </button>
       </div>
     </div>
